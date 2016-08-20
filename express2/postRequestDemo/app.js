@@ -5,7 +5,7 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
- var friends = ["tony", "lily", "nina", "alex"];
+var friends = ["tony", "lily", "nina", "alex"];
 
 app.get("/", function(req, res) {
     res.render("home"); 
